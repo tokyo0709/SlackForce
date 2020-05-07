@@ -1,5 +1,16 @@
 <template>
     <lightning-card  variant="Narrow">
-        <lightning-button variant="brand" label="Send Message to Slack" title="Send Message to Slack" onclick={sendMessageToSlack}></lightning-button>
+        <div style="margin-left:15px;margin-bottom:10px;">
+            <lightning-button variant="brand" label="Send Message to Slack" title="Send Message to Slack" onclick={sendMessageToSlack}></lightning-button>
+        </div>
+    
+        <div style="margin-left:15px;">
+            <template if:false={messageSent}>
+                Message has not yet been sent
+            </template>
+            <template if:true={messageSent}>
+                Message has been sent
+            </template>
+        </div>
     </lightning-card>
 </template>

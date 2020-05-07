@@ -3,8 +3,8 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/SendToSlackLWC": [
-                "SendToSlackLWC/SendToSlackLWC.js"
+            "c/sendToSlackLWC": [
+                "sendToSlackLWC/sendToSlackLWC.js"
             ]
         }
     },

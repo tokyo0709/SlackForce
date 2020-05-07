@@ -3,10 +3,14 @@ import sendMessageToSlack from '@salesforce/apex/SendToSlackLWCController.sendMe
 
 export default class SendToSlackLWC extends LightningElement {
 
+    messageSent = false;
+
     sendMessageToSlack() {
 
         sendMessageToSlack({})
-            .then((result)) => {
+            .then(() => {
+
+                this.messageSent = true;
 
             }).catch(error => {
                 console.log(error);
